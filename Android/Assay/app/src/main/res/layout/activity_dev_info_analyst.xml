@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".DevInfoAnalystActivity">
+
+    <Button
+        android:id="@+id/dev_info_analyst_button_scan_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/button_scan_qr"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/dev_info_analyst_scrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/dev_info_analyst_scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dev_info_analyst_button_scan_qr">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_analyst_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_analyst_id"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_username"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_dev_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_dev_id"
+                android:textIsSelectable="true"/>
+
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_test_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_test_name"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_dev_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_dev_state"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_manufacturing_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_manufacturing_date"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_expiration_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_expiration_date"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_bench_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_bench_number"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_manufacturer_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:textSize="21sp"
+                android:text="@string/label_manufacturer_id"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_producing_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_producing_area"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_operator_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_operator_id"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_test_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_test_date"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_patient_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_patient_id"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_date_of_birth"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_gender"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_weight"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_img_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_img_url"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_results"
+                android:textIsSelectable="true"/>
+
+            <TextView
+                android:id="@+id/dev_info_analyst_textView_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:ems="10"
+                android:layout_marginBottom="8dp"
+                android:text="@string/label_location"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorUni"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/uofg_logo_resized" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

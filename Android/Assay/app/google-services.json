@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "246007074090",
+    "firebase_url": "https://assay-dev-6b4ee.firebaseio.com",
+    "project_id": "assay-dev-6b4ee",
+    "storage_bucket": "assay-dev-6b4ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246007074090:android:dae67a16cb89d223",
+        "android_client_info": {
+          "package_name": "com.glasgowuniversity.assay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246007074090-cidt8f3lr881o36a96ioanjgd8mgmur2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.glasgowuniversity.assay",
+            "certificate_hash": "c5d105c8b164317d28b794948b3133ebc3c157d6"
+          }
+        },
+        {
+          "client_id": "246007074090-mdaf1595kiibj6sdq7cbv804i5jfojip.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.glasgowuniversity.assay",
+            "certificate_hash": "ce572725f093203341eda041605cad28916a1661"
+          }
+        },
+        {
+          "client_id": "246007074090-4japolca63l9qnv2rnjkmh09qh59nr8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0OE6NV6F91aw2lQhl9DEBj9QGYzq3Id4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246007074090-4japolca63l9qnv2rnjkmh09qh59nr8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

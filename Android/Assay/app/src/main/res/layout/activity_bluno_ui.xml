@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlunoUIActivity"
+    android:background="@color/colorBackground"
+    android:keepScreenOn="true">
+
+
+    <Button
+        android:id="@+id/bluno_button_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/button_scan"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toStartOf="@+id/bluno_button_send"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bluno_button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/button_send"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bluno_button_scan"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bluno_input_temperature"
+        android:layout_width="103dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:inputType="numberDecimal"
+        android:background="@color/colorInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bluno_button_scan" />
+
+    <TextView
+        android:id="@+id/bluno_label_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/label_temperature"
+        app:layout_constraintBottom_toBottomOf="@+id/bluno_input_temperature"
+        app:layout_constraintStart_toEndOf="@+id/bluno_input_temperature"
+        app:layout_constraintTop_toTopOf="@+id/bluno_input_temperature" />
+
+    <EditText
+        android:id="@+id/bluno_input_hour"
+        android:hint="0"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:inputType="number"
+        android:background="@color/colorInput"
+        app:layout_constraintBottom_toBottomOf="@+id/bluno_label_hours"
+        app:layout_constraintEnd_toStartOf="@+id/bluno_label_hours"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bluno_label_hours" />
+
+    <TextView
+        android:id="@+id/bluno_label_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_hours"
+        app:layout_constraintBottom_toBottomOf="@+id/bluno_input_minutes"
+        app:layout_constraintEnd_toStartOf="@+id/bluno_input_minutes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bluno_input_hour"
+        app:layout_constraintTop_toTopOf="@+id/bluno_input_minutes" />
+
+    <EditText
+        android:id="@+id/bluno_input_minutes"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorInput"
+        android:hint="0"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/bluno_label_minutes"
+        app:layout_constraintEnd_toStartOf="@+id/bluno_label_minutes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bluno_label_hours"
+        app:layout_constraintTop_toTopOf="@+id/bluno_label_minutes" />
+
+    <TextView
+        android:id="@+id/bluno_label_minutes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_minutes"
+        app:layout_constraintBottom_toBottomOf="@+id/bluno_input_seconds"
+        app:layout_constraintEnd_toStartOf="@+id/bluno_input_seconds"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bluno_input_minutes"
+        app:layout_constraintTop_toTopOf="@+id/bluno_input_seconds" />
+
+    <EditText
+        android:id="@+id/bluno_input_seconds"
+        android:hint="0"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:background="#FFF"
+        app:layout_constraintBottom_toBottomOf="@+id/bluno_label_seconds"
+        app:layout_constraintEnd_toStartOf="@+id/bluno_label_seconds"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bluno_label_minutes"
+        app:layout_constraintTop_toTopOf="@+id/bluno_label_seconds" />
+
+    <TextView
+        android:id="@+id/bluno_label_seconds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/label_seconds"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/bluno_input_seconds"
+        app:layout_constraintTop_toBottomOf="@+id/bluno_input_temperature" />
+
+    <TextView
+        android:id="@+id/bluno_label_received"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/label_received"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bluno_input_minutes" />
+
+    <TextView
+        android:id="@+id/bluno_textView_data_received"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="#e6f3ff"
+        android:text="@string/sample_data"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bluno_label_received" />
+
+    <TextView
+        android:id="@+id/deviceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bluno_button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_next"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/bluno_textView_data_received"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bluno_textView_data_received" />
+
+    <Button
+        android:id="@+id/bluno_button_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_upload_now"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/bluno_button_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bluno_textView_data_received" />
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorUni"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/uofg_logo_resized" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

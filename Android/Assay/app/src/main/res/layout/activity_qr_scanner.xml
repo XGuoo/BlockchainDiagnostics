@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".QrScannerActivity">
+
+    <SurfaceView
+        android:id="@+id/qr_camera_preview"
+        android:layout_width="1024px"
+        android:layout_height="768px"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/qr_textView"
+        android:layout_below="@id/qr_camera_preview"
+        android:layout_marginTop="20dp"
+        android:text="@string/label_qr_scanner"
+        android:textSize="18sp"
+        android:gravity="center" />
+
+    <Button
+        android:id="@+id/qr_button_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qr_textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/menu_connect"
+        tools:visibility="gone" />
+
+</RelativeLayout>

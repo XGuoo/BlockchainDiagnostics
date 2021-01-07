@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".DevInfoManufacturerActivity">
+
+    <Button
+        android:id="@+id/dev_info_manufacturer_button_scan_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/button_scan_qr"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/dev_info_analyst_scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dev_info_manufacturer_button_scan_qr"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dev_info_manufacturer_label_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:text="@string/label_user_id"
+                android:textIsSelectable="true"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/dev_info_manufacturer_label_dev_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:text="@string/label_dev_id"
+                android:textIsSelectable="true"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/dev_info_manufacturer_label_test_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:text="@string/label_test_name"
+                android:background="@color/colorBackgroundDark"
+                android:textIsSelectable="true"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/dev_info_manufacturer_input_test_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:hint="@string/label_test_name"
+                android:background="@color/colorInput"
+                android:inputType="text"
+                android:textIsSelectable="true"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/dev_info_manufacturer_label_dev_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:textStyle="bold"
+                android:text="@string/label_dev_state"
+                android:textIsSelectable="true"
+                android:textSize="21sp" />
+
+            <Spinner
+                android:id="@+id/dev_info_manufacturer_status_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:entries="@array/status_array"
+                android:prompt="@string/label_status" />
+
+            <TextView
+                android:id="@+id/dev_info_manufacturer_label_manufacture_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:textStyle="bold"
+                android:text="@string/label_manufacturing_date"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/dev_info_manufacturer_input_manufacture_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:ems="10"
+                android:hint="@string/label_manufacturing_date"
+                android:inputType="text"
+                android:textIsSelectable="true"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/dev_info_manufacturer_label_expiration_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:textStyle="bold"
+                android:text="@string/label_expiration_date"
+                android:textIsSelectable="true"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/dev_info_manufacturer_input_expiration_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:ems="10"
+                android:hint="@string/label_expiration_date"
+                android:inputType="text"
+                android:textIsSelectable="true"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/dev_info_manufacturer_label_bench_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:textStyle="bold"
+                android:text="@string/label_bench_number"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/dev_info_manufacturer_input_bench_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:ems="10"
+                android:hint="@string/label_bench_number"
+                android:inputType="number"
+                android:textIsSelectable="true"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/dev_info_manufacturer_label_producing_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:ems="10"
+                android:textStyle="bold"
+                android:text="@string/label_producing_area"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/dev_info_manufacturer_input_producing_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:ems="10"
+                android:hint="@string/label_producing_area"
+                android:inputType="text"
+                android:textIsSelectable="true"
+                android:textSize="21sp" />
+
+            <Button
+                android:id="@+id/dev_info_manufacturer_button_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_save" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorUni"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/uofg_logo_resized" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

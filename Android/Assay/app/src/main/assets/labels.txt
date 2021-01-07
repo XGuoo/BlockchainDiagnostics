@@ -1,0 +1,5 @@
+1N2P
+1P2N
+Double Positive
+Invalid
+Negative

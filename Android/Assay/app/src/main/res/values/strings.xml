@@ -1,0 +1,226 @@
+<resources>
+    <string name="app_name">BlockChain Diagnostics</string>
+
+    <string name="button_scan">Scan</string>
+    <string name="button_send">Send Data</string>
+
+    <string name="label_temperature">ºC</string>
+    <string name="label_hours">H</string>
+    <string name="label_minutes">Min</string>
+    <string name="label_seconds">S</string>
+    <string name="label_temperature_hint">temperature</string>
+    <string name="label_hours_hint">hours</string>
+    <string name="label_minutes_hint">minutes</string>
+    <string name="label_seconds_hint">seconds</string>
+
+    <string name="label_received">Received Data:</string>
+
+    <string name="fake_data">Temperature: 61 ºC \nTime remains: 11:55:14</string>
+
+    <string name="sample_data">No Device Connected</string>
+
+    <string name="label_username">Username</string>
+    <string name="label_password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="button_logout">Logout</string>
+
+    <string name="button_dev_info">Add Device\nInformation</string>
+    <string name="button_start">Start Test</string>
+    <string name="button_results">View Device\nInformation</string>
+
+    <string name="label_dev_id">Device ID</string>
+    <string name="label_dev_state">Device State</string>
+    <string name="label_manufacturing_date">Manufacturing Date</string>
+    <string name="label_expiration_date">Expiration Date</string>
+    <string name="label_bench_number">Batch Number</string>
+    <string name="label_user_id">User ID</string>
+    <string name="label_producing_area">Producing Area</string>
+
+    <string name="button_scan_qr">Scan Qr Code</string>
+
+    <string name="label_operator_id">Operator ID</string>
+    <string name="label_test_date">Date of Test</string>
+    <string name="label_patient_id">Patient ID</string>
+    <string name="label_img_url">Image URL</string>
+    <string name="label_results">Results</string>
+
+    <string name="label_analyst_id"><b>Analyst ID</b></string>
+
+    <string name="label_manufacturer_id">Manufacturer ID</string>
+
+    <string name="label_qr_scanner">Please focus on QR code</string>
+
+    <string name="label_coming_soon">Coming Soon!</string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="unknown_characteristic">Unknown characteristic</string>
+    <string name="unknown_service">Unknown service</string>
+
+    <string name="button_next">Next</string>
+
+    <string name="button_upload_now">Upload to FireBase</string>
+    <string name="button_upload_later">Upload Later</string>
+    <string name="button_save">Save</string>
+
+    <string name="label_name">Name</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_date_of_birth">Age</string>
+    <string name="label_weight">Weight</string>
+    <string name="label_child">Child Name</string>
+    <string name="label_location">Test Location</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="action_settings">Action settings</string>
+    <string name="button_dev_create">Create Device</string>
+    <string name="label_test_name">Test Name</string>
+    <string name="label_status">Status</string>
+    <string name="label_father">Father Name</string>
+
+    <string-array name="status_array">
+        <item>New</item>
+        <item>Used</item>
+        <item>Failed</item>
+        <item>Valid</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="number_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+        <item>81</item>
+        <item>82</item>
+        <item>83</item>
+        <item>84</item>
+        <item>85</item>
+        <item>86</item>
+        <item>87</item>
+        <item>88</item>
+        <item>89</item>
+        <item>90</item>
+        <item>91</item>
+        <item>92</item>
+        <item>93</item>
+        <item>94</item>
+        <item>95</item>
+        <item>96</item>
+        <item>97</item>
+        <item>98</item>
+        <item>99</item>
+    </string-array>
+
+    <string name="fake_details">Assay Device ID: D00123T
+                                \nUser: Test
+                                \nTestName: Test
+                                \nNumber of Strips: 4</string>
+
+    <string name="capture">CAPTURE</string>
+    <string name="please_align">Please align Assay within the frame borders</string>
+    <string name="guideline">guideline</string>
+    <string name="result_label">Result</string>
+    <string name="analysing_label">Analysing</string>
+    <string name="confidence_label">Confidence</string>
+    <string name="button_analyse">Analyse</string>
+    <string name="button_re_analyse">Re-Analyse</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="location_permission_denied">Location Permission Denied</string>
+    <string name="permission_required_toast">Location Permission Required</string>
+    <string name="permission_rationale_location">Location Permission Needed for Maps</string>
+
+</resources>

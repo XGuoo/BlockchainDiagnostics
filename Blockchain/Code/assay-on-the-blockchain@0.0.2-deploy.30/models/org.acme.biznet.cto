@@ -1,0 +1,90 @@
+/**
+ * Business network definition for assay-on-the-blockchain.
+ */
+
+// define participants 
+namespace org.acme.howto
+
+enum DepartmentName{
+	o Manufacturer
+	o Operator
+    o Analyst
+}
+
+concept Person {
+  o String Uname
+}
+
+//Define participant
+participant Department identified by departmentId {
+  o String departmentId
+  o DepartmentName depattmentName
+  o Person username
+}
+
+
+
+// Define assets
+
+/*asset Device identified by deviceId {
+  o String deviceId
+  o String state
+  o String testName
+  o DepartmentName node default = "Manufacturer" 
+--> Department owner
+--> getMinfo MDT optional
+--> getTinfo TDT optional
+}*/
+//
+
+asset Device identified by deviceId{
+	o String deviceId
+    o String state default = "New"
+  --> Department owner
+  --> getMinfo MDT optional
+  --> getTinfo TDT optional
+}
+  
+  asset getMinfo extends Device {
+    o DateTime ManufactureDate
+   	o DateTime ExpDate
+	o String benchNumber
+  	o DepartmentName node default = "Manufacturer" 
+	o Person Username
+    o String place
+}
+  
+   asset getTinfo extends Device {
+    o Person Username
+    o DateTime TestDate
+    o DepartmentName node default = "Operator" 
+	o String patientId
+  	o String url
+  	o Result result
+}
+  enum Result{
+	o Negative
+	o Positive
+ 	o Failed
+}
+
+  //define transaction
+  transaction updateMdata{
+--> Device device
+--> getMinfo MDT
+}
+  
+    transaction updateTdata{
+--> Device device
+--> getMinfo TDT
+}
+  
+	transaction ChangeOwner{
+--> Device device
+--> Department newOwner
+}
+ 
+  	transaction ChangeStateToUsed{
+
+--> Device device
+}

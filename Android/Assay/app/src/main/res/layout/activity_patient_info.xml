@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".PatientInfoActivity">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorUni"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/uofg_logo_resized" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/patient_info_label_dev_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:text="@string/label_dev_id"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/patient_info_label_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textStyle="bold"
+                android:text="@string/label_status"
+                android:textSize="21sp" />
+
+
+            <Spinner
+                android:id="@+id/patient_info_status_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:entries="@array/status_array"
+                android:prompt="@string/label_status" />
+
+            <TextView
+                android:id="@+id/patient_info_label_test_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:textStyle="bold"
+                android:text="@string/label_test_date"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/patient_info_input_test_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:ems="10"
+                android:hint="@string/label_test_date"
+                android:inputType="text"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/patient_info_label_patient_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textStyle="bold"
+                android:text="@string/label_patient_id"
+                android:textSize="21sp" />
+
+            <EditText
+                android:id="@+id/patient_info_input_patient_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:ems="10"
+                android:hint="@string/label_patient_id"
+                android:inputType="text"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/patient_info_label_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:textStyle="bold"
+                android:text="@string/label_gender"
+                android:textSize="21sp" />
+
+            <Spinner
+                android:id="@+id/patient_info_gender_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:entries="@array/gender_array"
+                android:prompt="@string/label_gender" />
+
+            <TextView
+                android:id="@+id/patient_info_label_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textStyle="bold"
+                android:text="@string/label_weight"
+                android:textSize="21sp" />
+
+            <Spinner
+                android:id="@+id/patient_info_input_weight_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:entries="@array/number_array"
+                android:prompt="@string/label_weight"/>
+            <TextView
+                android:id="@+id/patient_info_label_img_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:text="@string/label_img_url"
+                android:clickable="true"
+                android:textSize="21sp"
+                android:focusable="true" />
+
+            <TextView
+                android:id="@+id/patient_info_label_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textStyle="bold"
+                android:text="@string/label_date_of_birth"
+                android:textSize="21sp" />
+
+            <Spinner
+                android:id="@+id/patient_info_input_age_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:entries="@array/number_array"
+                android:prompt="@string/label_date_of_birth"/>
+
+            <TextView
+                android:id="@+id/patient_info_label_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:background="@color/colorBackgroundDark"
+                android:textStyle="bold"
+                android:text="@string/label_results"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/patient_info_input_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorInput"
+                android:ems="10"
+                android:hint="@string/label_results"
+                android:textSize="21sp" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/patient_info_label_child_name"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="@string/label_child"-->
+<!--                android:textSize="21sp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/patient_info_input_child_name"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:background="@color/colorInput"-->
+<!--                android:ems="10"-->
+<!--                android:hint="@string/label_child"-->
+<!--                android:inputType="text"-->
+<!--                android:textSize="21sp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/patient_info_label_father_name"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:ems="10"-->
+<!--                android:background="@color/colorBackgroundDark"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="@string/label_father"-->
+<!--                android:textSize="21sp" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/patient_info_input_father_name"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:background="@color/colorInput"-->
+<!--                android:ems="10"-->
+<!--                android:hint="@string/label_father"-->
+<!--                android:inputType="text"-->
+<!--                android:textSize="21sp" />-->
+
+            <TextView
+                android:id="@+id/patient_info_label_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textStyle="bold"
+                android:text="@string/label_location"
+                android:textSize="21sp" />
+
+
+            <EditText
+                android:id="@+id/patient_info_input_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorInput"
+                android:ems="10"
+                android:hint="@string/label_location"
+                android:textSize="21sp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <Button
+                android:id="@+id/patient_info_button_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_save" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

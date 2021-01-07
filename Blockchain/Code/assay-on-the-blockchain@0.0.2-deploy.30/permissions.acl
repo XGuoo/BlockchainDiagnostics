@@ -1,0 +1,79 @@
+/**
+ * Sample access control list.
+ */
+
+rule SystemACL {
+  description:  "System ACL to permit all access"
+  participant: "org.hyperledger.composer.system.Participant"
+  operation: ALL
+  resource: "org.hyperledger.composer.system.**"
+  action: ALLOW
+}
+
+rule NetworkAdminUser {
+    description: "Grant business network administrators full access to user resources"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "**"
+    action: ALLOW
+}
+
+rule NetworkAdminSystem {
+    description: "Grant business network administrators full access to system resources"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "org.hyperledger.composer.system.**"
+    action: ALLOW
+}
+
+
+rule EverybodyCanReadEverything {
+    description: "Allow all participants read access to all resources"
+    participant: "org.acme.howto.Department"
+    operation: READ
+    resource: "org.acme.howto.*"
+    action: ALLOW
+}
+
+rule OwnerHasFullAccessToTheirAssets {
+    description: "Allow all participants full access to their assets"
+    participant(p): "org.acme.howto.Department"
+    operation: ALL
+    resource(r): "org.acme.howto.Device"
+    condition: (r.owner.getIdentifier() === p.getIdentifier())
+    action: ALLOW
+}
+
+
+/*rule EntityCanChangeStateToUnused {
+    description: "Allow the entity to change the state of the device to unused"
+    participant: "org.acme.howto.User"
+    operation: CREATE
+    resource: "org.acme.howto.ChangeStateToUnused"
+    action: ALLOW
+}
+
+rule EntityCanChangeStateToUsed {
+    description: "Allow the entity to change the state of the device to used"
+    participant: "org.acme.howto.User"
+    operation: CREATE
+    resource: "org.acme.howto.ChangeStateToUsed"
+    action: ALLOW
+}
+
+rule EntityCanChangeStateToDestroyed {
+    description: "Allow the entity to change the state of the device to destroyed"
+    participant: "org.acme.howto.User"
+    operation: CREATE
+    resource: "org.acme.howto.ChangeStateToDestroyed"
+    action: ALLOW
+}
+
+rule EntityCanChangeStateToUploadfile {
+    description: "Allow the entity to change the state of the device to Uploadfile"
+    participant: "org.acme.howto.User"
+    operation: CREATE
+    resource: "org.acme.howto.ChangeStateToFileuploaded"
+    action: ALLOW
+}
+*/
