@@ -17,12 +17,11 @@ The Android App was designed to control the entire system, the blockchain networ
 ```
 .
 ├── Android
-│   ├── Assay_ml_v10
-│   ├── Assay_ml_v10.zip
+│   ├── Assay
 │   └── README.md
 ├── Blockchian
-│   ├── BlockChain_Data
-│   ├── Code
+│   ├── assay-tracking-network@0.0.2-deploy.28
+│   ├── assay-tracking-network@0.0.2-deploy.28.bna
 │   ├── README.md
 │   └── test_report.html
 ├── DeepLearning
