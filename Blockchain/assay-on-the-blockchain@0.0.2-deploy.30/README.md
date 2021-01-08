@@ -1,1 +1,0 @@
-#assay-on-the-blockchain

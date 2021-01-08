@@ -29,17 +29,17 @@ rule NetworkAdminSystem {
 
 rule EverybodyCanReadEverything {
     description: "Allow all participants read access to all resources"
-    participant: "org.acme.howto.Department"
+    participant: "assay-on-the-blockchain.Department"
     operation: READ
-    resource: "org.acme.howto.*"
+    resource: "assay-on-the-blockchain.*"
     action: ALLOW
 }
 
 rule OwnerHasFullAccessToTheirAssets {
     description: "Allow all participants full access to their assets"
-    participant(p): "org.acme.howto.Department"
+    participant(p): "assay-on-the-blockchain.Department"
     operation: ALL
-    resource(r): "org.acme.howto.Device"
+    resource(r): "assay-on-the-blockchain.Device"
     condition: (r.owner.getIdentifier() === p.getIdentifier())
     action: ALLOW
 }
@@ -47,33 +47,33 @@ rule OwnerHasFullAccessToTheirAssets {
 
 /*rule EntityCanChangeStateToUnused {
     description: "Allow the entity to change the state of the device to unused"
-    participant: "org.acme.howto.User"
+    participant: "assay-on-the-blockchain.User"
     operation: CREATE
-    resource: "org.acme.howto.ChangeStateToUnused"
+    resource: "assay-on-the-blockchain.ChangeStateToUnused"
     action: ALLOW
 }
 
 rule EntityCanChangeStateToUsed {
     description: "Allow the entity to change the state of the device to used"
-    participant: "org.acme.howto.User"
+    participant: "assay-on-the-blockchain.User"
     operation: CREATE
-    resource: "org.acme.howto.ChangeStateToUsed"
+    resource: "assay-on-the-blockchain.ChangeStateToUsed"
     action: ALLOW
 }
 
 rule EntityCanChangeStateToDestroyed {
     description: "Allow the entity to change the state of the device to destroyed"
-    participant: "org.acme.howto.User"
+    participant: "assay-on-the-blockchain.User"
     operation: CREATE
-    resource: "org.acme.howto.ChangeStateToDestroyed"
+    resource: "assay-on-the-blockchain.ChangeStateToDestroyed"
     action: ALLOW
 }
 
 rule EntityCanChangeStateToUploadfile {
     description: "Allow the entity to change the state of the device to Uploadfile"
-    participant: "org.acme.howto.User"
+    participant: "assay-on-the-blockchain.User"
     operation: CREATE
-    resource: "org.acme.howto.ChangeStateToFileuploaded"
+    resource: "assay-on-the-blockchain.ChangeStateToFileuploaded"
     action: ALLOW
 }
 */

@@ -1,6 +1,6 @@
 /**
 * updateMdata function
-* @param {org.acme.howto.updateMdata} tx The transaction that update the manufacture infomation.
+* @param {assay-on-the-blockchain.updateMdata} tx The transaction that update the manufacture infomation.
 * @transaction
 *
 */
@@ -9,7 +9,7 @@
 tx.device.state = "Unused";
   
     // Get the asset registry for the pizza asset.
-    return getAssetRegistry('org.acme.howto.Device')
+    return getAssetRegistry('assay-on-the-blockchain.Device')
         .then(function (assetRegistry) {
 
             // Update the asset in the pizza asset registry.
@@ -19,7 +19,7 @@ tx.device.state = "Unused";
 
 /**
 * updateMdata function
-* @param {org.acme.howto.updateMdata} tx The transaction that update the manufacture infomation.
+* @param {assay-on-the-blockchain.updateMdata} tx The transaction that update the manufacture infomation.
 * @transaction
 *
 */
@@ -29,7 +29,7 @@ tx.device.state = "Unused";
 tx.device.state = "used";
   
     // Get the asset registry for the  asset.
-    return getAssetRegistry('org.acme.howto.Device')
+    return getAssetRegistry('assay-on-the-blockchain.Device')
         .then(function (assetRegistry) {
 
             // Update the asset in the pizza asset registry.
@@ -40,7 +40,7 @@ tx.device.state = "used";
 
 /**
 * ChangeOwner function
-* @param {org.acme.howto.ChangeOwner} tx The transaction that update the manufacture infomation.
+* @param {assay-on-the-blockchain.ChangeOwner} tx The transaction that update the manufacture infomation.
 * @transaction
 *
 */
@@ -49,7 +49,7 @@ function ChangeOwner(tx) {
   tx.device.owner = tx.newOwner;
   
     // Get the asset registry for the pizza asset.
-    return getAssetRegistry('org.acme.howto.Device')
+    return getAssetRegistry('assay-on-the-blockchain.Device')
         .then(function (assetRegistry) {
 
             // Update the asset in the pizza asset registry.
@@ -58,7 +58,7 @@ function ChangeOwner(tx) {
 }
 
 /*
-*@param {org.acme.howto.ChangeStateToUsed} tx
+*@param {assay-on-the-blockchain.ChangeStateToUsed} tx
 *@transaction
 */
 function ChangeStateToUsed(tx) {
@@ -66,7 +66,7 @@ function ChangeStateToUsed(tx) {
 tx.device.state = "Used";
   
 
-    return getAssetRegistry('org.acme.howto.Device')
+    return getAssetRegistry('assay-on-the-blockchain.Device')
         .then(function (assetRegistry) {
 
             return assetRegistry.update(tx.device);
