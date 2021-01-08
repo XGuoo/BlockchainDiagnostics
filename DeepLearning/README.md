@@ -135,7 +135,7 @@ You can easily test the performace of your model with the scripts provided in th
 
 * CNN
 
-    The test code for the CNN model was "```/CNN/code/test.py```".
+    The test code for the CNN model is "```/CNN/code/test.py```".
 
 * Object detection
 
