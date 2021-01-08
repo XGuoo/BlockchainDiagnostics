@@ -3,7 +3,7 @@
  */
 
 // define participants 
-namespace org.acme.howto
+namespace assay-on-the-blockchain
 
 enum DepartmentName{
 	o Manufacturer
