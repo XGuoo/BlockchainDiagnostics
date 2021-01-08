@@ -1,0 +1,23 @@
+/**
+ * New query file
+ */
+query queryDevice {
+  description: "get history of a device"
+  statement:
+      SELECT org.assay.Device
+  		  WHERE (deviceId == _$deviceId)
+}
+
+query getBatchHistory { 
+  description: "see all of the participants that have worked with a particular device" 
+  statement: 
+  		SELECT org.assay.ProduceDevice
+  			WHERE (manufacturer == _$manufacturer ) 
+}
+
+query getCupData { 
+  description: "see all of the participants that have worked with a particular batch" 
+  statement: 
+  		SELECT org.assay.DoTheTest
+  			WHERE (operator == _$operator ) 
+}

@@ -1,0 +1,96 @@
+/**
+ * Business network definition for assay-on-the-blockchain.
+ */
+
+// define participants 
+namespace org.assay
+
+
+participant Manufacturer identified by manufacturerId {
+  o String manufacturerId
+  o String userName
+}
+
+participant Operator identified by operatorId {
+  o String operatorId
+  o String userName
+}
+
+participant Analyst identified by analystId {
+  o String analystId
+  o String userName
+}
+
+// Define assets
+
+enum DeviceStatus{
+  o New
+  o Used
+  o Failed
+  o Valid
+}
+
+enum Gender{
+o Male
+o Female
+o Other
+}
+
+asset Device identified by deviceId {
+  o String deviceId
+  o String testName optional
+  o Manufacturer manufacturer optional
+  o DateTime dateOfManufacture optional
+  o DateTime expireDate optional
+  o String benchNumber optional
+  o String productionPlace optional
+  o DeviceStatus status default = "New" optional
+  o Operator operator optional
+  o DateTime testDate optional
+  o String patientId optional
+  o Gender gender optional
+  o String weight optional
+  o String url optional
+  o String result optional
+  o String testPlace optional
+}
+
+// define transaction transac 
+
+abstract transaction diagnotic {
+  o String deviceId
+}
+
+transaction ProduceDevice extends diagnotic {
+  o String testName 
+  o Manufacturer manufacturer 
+  o DateTime dateOfManufacture 
+  o DateTime expireDate 
+  o String benchNumber 
+  o String productionPlace 
+  o DeviceStatus status default = "New"
+  --> Device device
+}
+event ProduceDeviceEvent {
+  o String  deviceId
+  o DeviceStatus devicestatus
+}
+
+transaction DoTheTest extends diagnotic {
+  o DeviceStatus status default = "Used"
+  o Operator operator 
+  o DateTime testDate 
+  o String patientId 
+  o Gender gender
+  o String weight
+  o String url 
+  o String result default = "-,-,-,-,-"
+  o String testPlace 
+  --> Device device
+}
+
+event DoTheTestEvent {
+  o String  deviceId
+  o DeviceStatus devicestatus
+}
+
