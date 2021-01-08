@@ -55,7 +55,7 @@ We used two different approaches in Deep Learning part, one is a convolutional n
 
 
     2. Run the Python code for training. 
-     > The code for training is "```/code/main.py```". You need to change the "__Paths__" in the Python code to the directory on your computer. This step takes approximatelly **xxx** minutes.
+     > The code for training is "```/code/main.py```". You need to change the "__Paths__" in the Python code to the directory on your computer. This step takes approximatelly 60 minutes ( depends on your hardware and settings such as steps and input size).
 
     >More information can be found on the [TensorFlow Official website](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html)
 * Object Detection
@@ -101,7 +101,7 @@ We used two different approaches in Deep Learning part, one is a convolutional n
 
                 python model_main_tf2.py --model_dir=models/my_ssd_resnet50_v1_fpn --pipeline_config_path=models/my_ssd_resnet50_v1_fpn/pipeline.config
                 ```
-	    >This step takes approximatelly **xxx** minutes.
+	    >This step takes approximatelly 10 hours( depends on your hardware and settings such as steps and model you choose) .
    
             >TensorFlow 2 provided many pre-trained models in [TensorFlow 2 Detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) 
 
