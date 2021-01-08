@@ -3,18 +3,13 @@
 .
 ├── CNN
 │   ├── ConfusionMiatrix.png
-│   ├── Images
 │   ├── code
 │   ├── model.h5
 │   └── model.tflite
 ├── Object_detection
-│   ├── TestImages
-│   ├── TraingingImages
 │   ├── annotation
 │   ├── obj_results.xlsx
-│   ├── pre-trained-models
-│   ├── scripts
-│   └── trained_model
+│   └── scripts
 └── README.md
 ```
 
