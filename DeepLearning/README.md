@@ -103,7 +103,7 @@ We used two different approaches in Deep Learning part, one is a convolutional n
                 ```
 	    >This step takes approximatelly 10 hours( depends on your hardware and settings such as steps and model you choose) .
    
-            >TensorFlow 2 provided many pre-trained models in [TensorFlow 2 Detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) 
+            >TensorFlow 2 provided many pre-trained models in [TensorFlow 2 Detection model zoo(https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) 
 
     >More details about training a custom Object Detection model with TensorFlow can be found [here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html)
 
