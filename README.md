@@ -30,8 +30,8 @@ The Android App was designed to concrol the entire system, the blockchain networ
 │   ├── Object_detection
 │   └── README.md
 └── Heater
-    ├── 3D\ models
-    ├── Arduino\ Code
+    ├── 3D models
+    ├── Arduino Code
     ├── Circuit_diagram
     └── README.md
 ```
