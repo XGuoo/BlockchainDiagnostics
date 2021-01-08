@@ -3,7 +3,11 @@
  */
 
 // define participants 
+<<<<<<< HEAD
 namespace org.assay
+=======
+namespace assay-on-the-blockchain
+>>>>>>> cfe72a52e58e9c973cfa622e16454f2f4bf6baa6
 
 enum DepartmentName{
 	o Manufacturer
