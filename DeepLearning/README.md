@@ -13,12 +13,12 @@
 └── README.md
 ```
 
-We used two different approches in Deep Learning part, one is a convolutional neural network (CNN), which is simplier but faster, another is an object-detection model based on ResNet, which can provide more information. 
+We used two different approaches in Deep Learning part, one is a convolutional neural network (CNN), which is simpler but faster, another is an object-detection model based on ResNet, which can provide more information. 
 
-## Setting up the development environment
+## Setting up the development environment and install dependences
 
 * For CNN
-   1. Install python environment ([Anaconda](https://www.anaconda.com/) is recomended)
+   1. Install python environment ([Anaconda](https://www.anaconda.com/) is recommended)
    2. Install Tensorflow
         ```
         pip install --upgrade tensorflow
@@ -51,10 +51,11 @@ We used two different approches in Deep Learning part, one is a convolutional ne
 
 * CNN
     1. Prapering the dataset. 
-     >The dataset for this study was placed in "```Image/TrainingImages```" directory, the dataset were devided to Training set and Validation set, and in each subset the images with different labels were placed into saperate folders.
+     >The dataset for this study was placed in "```Image/TrainingImages```" directory, the dataset were devided to Training set and Validation set, and in each subset the images with different labels were placed into saperate folders. Obtain the a subset of our datasets from our [data repository]()
+
 
     2. Run the Python code for training. 
-     > The code for training is "```/code/main.py```". You need to change the "__Paths__" in the Python code to the directory on your computer. 
+     > The code for training is "```/code/main.py```". You need to change the "__Paths__" in the Python code to the directory on your computer. This step takes approximatelly **xxx** minutes.
 
     >More information can be found on the [TensorFlow Official website](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html)
 * Object Detection
@@ -100,9 +101,9 @@ We used two different approches in Deep Learning part, one is a convolutional ne
 
                 python model_main_tf2.py --model_dir=models/my_ssd_resnet50_v1_fpn --pipeline_config_path=models/my_ssd_resnet50_v1_fpn/pipeline.config
                 ```
-
+	    >This step takes approximatelly **xxx** minutes.
    
-            >TensorFlow 2 provided many pre-trained models in [TensorFlow 2 Detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)
+            >TensorFlow 2 provided many pre-trained models in [TensorFlow 2 Detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md) 
 
     >More details about training a custom Object Detection model with TensorFlow can be found [here](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html)
 

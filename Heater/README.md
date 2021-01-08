@@ -18,4 +18,9 @@
 └── README.md
 ```
 
->The 3D models directory contains the 3D models of the mobile heater, the __.ipt__ files are the source file and the __.stl__ files are for 3D printing. The Arduino Code directory includes the program for the micro-controll. You can edit it with Arduino IDE. The schematic of the heater circuit was placed in Circuit_diagram folder.
+## Environment and Dependences
+The 3D models directory contains the 3D models of the mobile heater, the __.ipt__ files are the source file and the __.stl__ files are for 3D printing. These were generated using **XXX** software. 
+
+The Arduino Code directory includes the program for the micro-controller. You can edit it with Arduino IDE. 
+
+The schematic of the heater circuit was placed in Circuit_diagram folder.
