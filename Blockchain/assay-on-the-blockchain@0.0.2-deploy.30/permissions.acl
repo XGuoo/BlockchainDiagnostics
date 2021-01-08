@@ -29,17 +29,17 @@ rule NetworkAdminSystem {
 
 rule EverybodyCanReadEverything {
     description: "Allow all participants read access to all resources"
-    participant: "assay-on-the-blockchain.Department"
+    participant: "org.assay.Department"
     operation: READ
-    resource: "assay-on-the-blockchain.*"
+    resource: "org.assay.*"
     action: ALLOW
 }
 
 rule OwnerHasFullAccessToTheirAssets {
     description: "Allow all participants full access to their assets"
-    participant(p): "assay-on-the-blockchain.Department"
+    participant(p): "org.assay.Department"
     operation: ALL
-    resource(r): "assay-on-the-blockchain.Device"
+    resource(r): "org.assay.Device"
     condition: (r.owner.getIdentifier() === p.getIdentifier())
     action: ALLOW
 }
@@ -47,33 +47,33 @@ rule OwnerHasFullAccessToTheirAssets {
 
 /*rule EntityCanChangeStateToUnused {
     description: "Allow the entity to change the state of the device to unused"
-    participant: "assay-on-the-blockchain.User"
+    participant: "org.assay.User"
     operation: CREATE
-    resource: "assay-on-the-blockchain.ChangeStateToUnused"
+    resource: "org.assay.ChangeStateToUnused"
     action: ALLOW
 }
 
 rule EntityCanChangeStateToUsed {
     description: "Allow the entity to change the state of the device to used"
-    participant: "assay-on-the-blockchain.User"
+    participant: "org.assay.User"
     operation: CREATE
-    resource: "assay-on-the-blockchain.ChangeStateToUsed"
+    resource: "org.assay.ChangeStateToUsed"
     action: ALLOW
 }
 
 rule EntityCanChangeStateToDestroyed {
     description: "Allow the entity to change the state of the device to destroyed"
-    participant: "assay-on-the-blockchain.User"
+    participant: "org.assay.User"
     operation: CREATE
-    resource: "assay-on-the-blockchain.ChangeStateToDestroyed"
+    resource: "org.assay.ChangeStateToDestroyed"
     action: ALLOW
 }
 
 rule EntityCanChangeStateToUploadfile {
     description: "Allow the entity to change the state of the device to Uploadfile"
-    participant: "assay-on-the-blockchain.User"
+    participant: "org.assay.User"
     operation: CREATE
-    resource: "assay-on-the-blockchain.ChangeStateToFileuploaded"
+    resource: "org.assay.ChangeStateToFileuploaded"
     action: ALLOW
 }
 */

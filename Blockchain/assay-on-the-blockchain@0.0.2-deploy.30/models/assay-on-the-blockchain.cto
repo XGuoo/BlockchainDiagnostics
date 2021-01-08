@@ -3,7 +3,7 @@
  */
 
 // define participants 
-namespace org.acme.howto
+namespace org.assay
 
 enum DepartmentName{
 	o Manufacturer
