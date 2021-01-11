@@ -53,8 +53,8 @@ We used two different approaches in Deep Learning part, one is a convolutional n
 
 * CNN
     1. Prapering the dataset. 
-     >The dataset for this study was placed in "```Image/TrainingImages```" directory, the dataset were devided to Training set and Validation set, and in each subset the images with different labels were placed into saperate folders. Obtain the a subset of our datasets from our [data repository](https://doi.org/10.5281/zenodo.4428987).[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4429045.svg)](https://doi.org/10.5281/zenodo.4429045)
-
+     >The dataset for this study was placed in "```Image/TrainingImages```" directory, the dataset were devided to Training set and Validation set, and in each subset the images with different labels were placed into saperate folders. Obtain the a subset of our datasets from our [data repository](https://doi.org/10.5281/zenodo.4428987).
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4428987.svg)](https://doi.org/10.5281/zenodo.4428987)
 
     2. Run the Python code for training. 
      > The code for training is "```/code/main.py```". You need to change the "__Paths__" in the Python code to the directory on your computer. This step takes approximatelly 60 minutes ( depends on your hardware and settings such as steps and input size). More information can be found on the [TensorFlow Official website](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/install.html).
