@@ -1,6 +1,6 @@
 
 # Smartphone based Malaria diagnostics
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4432681.svg)](https://doi.org/10.5281/zenodo.4432681)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4432713.svg)](https://doi.org/10.5281/zenodo.4432713)
 
 ## Overview
 
