@@ -4,6 +4,7 @@
 ├── CNN
 │   ├── ConfusionMiatrix.png
 │   ├── code
+│   ├── training_log
 │   ├── model.h5
 │   └── model.tflite
 ├── Object_detection
