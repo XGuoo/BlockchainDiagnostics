@@ -11,6 +11,7 @@
 │   ├── annotation
 │   ├── obj_results.xlsx
 │   └── scripts
+├── test_results.xlsx
 └── README.md
 ```
 
@@ -131,7 +132,7 @@ We used two different approaches in Deep Learning part, one is a convolutional n
 
 ## Test the Model
 
-You can easily test the performace of your model with the scripts provided in this repo. The only thing you need to do is editing "PATH" in the code by following the comments.
+You can easily test the performace of your model with the scripts provided in this repo. The only thing you need to do is editing "PATH" in the code by following the comments.The test results we used for publication are in the test_results.xlsx file.
 
 
 * CNN
