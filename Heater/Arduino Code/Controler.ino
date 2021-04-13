@@ -36,7 +36,7 @@ int mark = 0;
 
 void setup()
 { //pinMode(PWM_pin, OUTPUT);
-  Timer1.initialize(1000000);//初始化定时器为1s
+  Timer1.initialize(1000000);//
 Timer1.attachInterrupt( timerIsr );
   Serial.begin(115200);
 }
@@ -60,7 +60,7 @@ void loop() {
     mark = 1;
   }
 
-  if (mark == 1) //如果接收到数据则执行comdata分析操作，否则什么都不做。
+  if (mark == 1) 
   {
     Serial.println(comdata);
     for (int i = 0; i < comdata.length() - 1 ; i++)
